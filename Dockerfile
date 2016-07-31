@@ -1,6 +1,7 @@
 ############################################################
 # Dockerfile to build FeSa Installed Containers
 # Based on CentOS
+# 0731 修改产品模块定义
 ############################################################
 # Set the base image to CentOS
 FROM index.tenxcloud.com/tenxcloud/centos
