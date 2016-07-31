@@ -17,7 +17,7 @@ RUN yum -y install wget
 RUN wget http://oarixzew4.bkt.clouddn.com/zookeeper-3.4.6.tar.gz
 RUN wget http://oarixzew4.bkt.clouddn.com/apache-tomcat-7.0.70.tar.gz
 RUN wget http://oarixzew4.bkt.clouddn.com/jdk-7u79-linux-x64.gz
-RUN wget http://oarixzew4.bkt.clouddn.com/portal0731.war
+RUN wget http://oarixzew4.bkt.clouddn.com/portal0731-1.war
 RUN wget http://oarixzew4.bkt.clouddn.com/crawler.war
 # Setup Files
 RUN tar -zxvf jdk-7u79-linux-x64.gz -C /opt/
@@ -26,7 +26,7 @@ RUN tar -zxvf zookeeper-3.4.6.tar.gz -C /opt
 # Config zookeeper
 RUN cp /opt/zookeeper-3.4.6/conf/zoo_sample.cfg /opt/zookeeper-3.4.6/conf/zoo.cfg
 # Unzip Apps
-RUN cp portal0731.war /opt/apache-tomcat-7.0.70/webapps/portal.war
+RUN cp portal0731-1.war /opt/apache-tomcat-7.0.70/webapps/portal.war
 RUN cp crawler.war /opt/apache-tomcat-7.0.70/webapps/
 # Setting ENV
 ENV JAVA_HOME=/opt/jdk1.7.0_79
