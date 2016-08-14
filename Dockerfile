@@ -14,11 +14,11 @@ WORKDIR /opt/mysoft
 RUN yum clean all
 RUN yum -y install wget
 #Download Files
-RUN wget http://oarixzew4.bkt.clouddn.com/zookeeper-3.4.6.tar.gz
-RUN wget http://oarixzew4.bkt.clouddn.com/apache-tomcat-7.0.70.tar.gz
-RUN wget http://oarixzew4.bkt.clouddn.com/jdk-7u79-linux-x64.gz
-RUN wget http://oarixzew4.bkt.clouddn.com/portal0814.war
-RUN wget http://oarixzew4.bkt.clouddn.com/crawler0814.war
+RUN wget http://obw3khok2.bkt.clouddn.com/zookeeper-3.4.6.tar.gz
+RUN wget http://obw3khok2.bkt.clouddn.com/apache-tomcat-7.0.70.tar.gz
+RUN wget http://obw3khok2.bkt.clouddn.com/jdk-7u79-linux-x64.gz
+RUN wget http://obw3khok2.bkt.clouddn.com/portal0814.war
+RUN wget http://obw3khok2.bkt.clouddn.com/crawler0814.war
 # Setup Files
 RUN tar -zxvf jdk-7u79-linux-x64.gz -C /opt/
 RUN tar -zxvf apache-tomcat-7.0.70.tar.gz -C /opt/
