@@ -40,7 +40,7 @@ RUN source /etc/profile
 WORKDIR /opt/
 # EXPOSE port
 EXPOSE 8080
-EXPOSE 2181
+EXPOSE 2181 2888 3888
 EXPOSE 22
 # ENTRYPOINT commend
 ENTRYPOINT /opt/apache-tomcat-7.0.70/bin/startup.sh && /opt/zookeeper-3.4.6/bin/zkServer.sh start && tail -f /opt/apache-tomcat-7.0.70/logs/catalina.out 
